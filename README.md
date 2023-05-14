@@ -1,5 +1,5 @@
 # fib
-This is a simple package to expose high speed functions related to Fibonacci numbers using methods that do not use the recurrence relation F<Sub>n+1</sub> = F<Sub>n</sub> + F<Sub>n-1</sub>
+This is a simple package to expose high speed functions related to Fibonacci numbers using methods that do not use the recurrence relation F<Sub>n+1</sub> = F<Sub>n</sub> + F<Sub>n-1</sub>.
 
 ## `FibonacciNumberWithIndex(index int) int64`
 This function finds the Fibinacci number having the given index. The indices may be negative. Note this function is only accurate for indices between -75 and 75 inclusive.
