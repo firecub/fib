@@ -33,7 +33,7 @@ func FibonacciFloorIndexFor(number int64) int {
         if indexFloat >= indexApprox {
             return int(indexApprox)
         }
-        if FibonacciNumberWithIndex(int(indexApprox)) > number {
+        if int64(math.Round(math.Pow((root_five + float64(1)) / float64(2), indexApprox) / root_five)) > number {
             return int(indexApprox) - 1
         }
         return int(indexApprox)
@@ -41,7 +41,7 @@ func FibonacciFloorIndexFor(number int64) int {
     if indexFloat <= indexApprox {
         return - int(indexApprox)
     }
-    if FibonacciNumberWithIndex(int(indexApprox)) < -number {
+    if int64(math.Round(math.Pow((root_five + float64(1)) / float64(2), indexApprox) / root_five)) < -number {
         return - int(indexApprox) - 1
     }
     return -int(indexApprox)
